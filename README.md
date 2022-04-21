@@ -3,7 +3,7 @@
 ```
 cd c:\projects\QMK
 docker build -t me/qmk .
-docker run -it --rm -v ${PWD}:/code --name makeqmk me/qmk
+docker run -it --rm -v ${PWD}/quefrency/firmware:/firmware -v ${PWD}/quefrency/eric:/qmk/qmk_firmware/keyboards/keebio/quefrency/keymaps/eric me/qmk
 #firmware will be put in c:\projects\QMK\quefrency\firmware
 ```
 
